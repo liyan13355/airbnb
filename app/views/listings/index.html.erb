@@ -1,7 +1,9 @@
-	<% @list.each do |listing| %>
-		<%= listing.name %>
-		<br/>
-		<%= listing.description %>
+<h3>Verified Listings</h3> 
+
+<ul> <% @list.each do |listing| %>
+		<li> <strong> <%= listing.name %> </strong></li>
+		<li> <%= listing.description %></li>
 	<% end %>
+</ul>
 
  
